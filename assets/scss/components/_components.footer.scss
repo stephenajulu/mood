@@ -1,0 +1,15 @@
+/*------------------------------------*\
+    #COMPONENTS: FOOTER
+\*------------------------------------*/
+
+.Footer {
+    border-top: solid 1px var(--color-lightest);
+    font-family: var(--font-system-mn);
+    margin-top: calc(var(--base-margin) * 4);
+    padding: calc(var(--base-margin) * 2); 
+
+    p {
+        color: var(--color-mid);
+        margin: 0; 
+    }
+}

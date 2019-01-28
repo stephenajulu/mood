@@ -1,0 +1,12 @@
+{{ define "main" }}
+  <main class="Grid">
+  {{ range .Pages }}
+      {{if eq .Type "post" }} 
+      <!-- look for type in the front matter -->
+        {{ .Content }}
+        <!--<a href="{{ .Permalink }}">{{ .Title }}</a>
+        {{ .Date.Format "2006-01-02" }}-->
+        {{ end }}
+  {{ end }}
+      </main>
+{{ end }}

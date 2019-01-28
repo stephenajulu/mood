@@ -1,0 +1,35 @@
+/*------------------------------------*\
+    #COMPONENTS: HEADER
+\*------------------------------------*/
+
+.Header {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    line-height: var(--base-line-height);
+    margin-bottom: calc(var(--base-margin) * 2);
+
+    a {
+        color: var(--color-dark);
+    }
+}
+
+.Header-title {
+    font-size: var(--base-font-size);
+    font-weight: 700;
+    line-height: 32px;
+}
+
+//.Header-nav {}
+
+.Header-navList {
+    display: flex;
+    font-size: var(--font-size-s);
+    list-style: none;
+    line-height: 32px;
+}
+
+.Header-navListItem:not(:last-of-type) {
+    margin: 0;
+    padding-right: calc(var(--base-margin) * 2);
+}

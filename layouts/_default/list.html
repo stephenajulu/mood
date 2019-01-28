@@ -1,0 +1,9 @@
+{{ define "main" }}
+  <main class="Grid">
+  {{ range .Pages }}
+      {{ .Content }}
+      <!--<a href="{{ .Permalink }}">{{ .Title }}</a>
+      {{ .Date.Format "2006-01-02" }}-->
+  {{ end }}
+  </main>
+{{ end }}

@@ -1,0 +1,68 @@
+/*------------------------------------*\
+    #COMPONENTS: LIGHTBOX
+\*------------------------------------*/
+
+/* -------- the object that calls the function  */
+
+.Lightbox {
+  cursor: pointer;
+}
+
+/* -------- the LightBox  */
+
+#Lightbox {
+  position: fixed;
+  top:0px;
+  left:0px;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255,255,255,0.95);
+  z-index: 100;
+  opacity: 0;
+  display: none;
+
+  span {
+    position: absolute;
+    cursor: pointer;
+    z-index: 110;
+    text-align: center;
+
+    i {
+      font-size: 2em;
+      color: #333;
+      line-height: 100px;
+      width: 100px;
+    }
+  }
+  .close {
+    top: 0px;
+    right: 0px;
+  }
+  .next {
+    top: 50%;
+    right: 10px;
+    transform: translate(0px, -50%);
+  }
+  .prev {
+    top: 50%;
+    left: 10px;
+    transform: translate(0px, -50%);
+  }
+
+  /* -------- the image in LightBox */
+
+  img {
+    /* -------- If you like the edges around the picture just change a max-width and max-height to 90vw */
+    max-width: 90vw;
+    max-height: 90vh;
+    position: absolute;
+    /* -------- Set image to center */
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    }
+  }

@@ -1,0 +1,28 @@
+/*------------------------------------*\
+    #BASE: HEADING
+\*------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-dark);
+    font-weight: var(--font-weight-medium);
+}
+
+h1 {
+   font-size: var(--font-size-xl);
+   line-height: var(--line-height-xl);
+}
+
+h2 {
+    font-size: var(--font-size-l);
+    line-height: var(--line-height-l);
+ }
+
+h3 {
+    font-size: var(--font-size-m);
+    line-height: var(--line-height-m);
+ }
+
+ h4, h5, h6 {
+    font-size: var(--font-size-s);
+    line-height: var(--line-height-m);
+ }

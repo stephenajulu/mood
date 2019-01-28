@@ -1,0 +1,21 @@
+/*------------------------------------*\
+    #LAYOUTS: Flex
+\*------------------------------------*/
+
+.Flex-item {
+    margin-top: calc(var(--base-margin) *2);
+}
+
+@media all and (min-width: 450px) {
+    .Flex {
+        display: flex;
+    }
+
+    .Flex-item {
+        flex: 1;
+        margin-top: 0;
+        margin-right: var(--base-margin);
+        margin-bottom: var(--base-margin);
+        margin-left: var(--base-margin);
+    }
+}

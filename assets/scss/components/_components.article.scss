@@ -1,0 +1,12 @@
+/*------------------------------------*\
+    #COMPONENTS: ARTICLE
+\*------------------------------------*/
+
+.Article {
+    margin-top: calc(var(--base-margin) *2);
+
+    img {
+        margin-top: calc(var(--base-margin) *2);
+        margin-bottom: calc(var(--base-margin) *2);
+    }
+}
