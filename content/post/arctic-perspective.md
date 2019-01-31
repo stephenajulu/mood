@@ -5,6 +5,8 @@ draft: false
 type: "post"
 ---
 
+{{< img src="v1548971607/mood/AIGA_Screens_01-05.png" alt="Pyxis by Simon Bent for The Designers Foundry">}}
+
 {{< img src="v1548799113/mood/0c683730a761d92df498f9dc9cee85aa.jpg" alt="Carl Andre Equivalent VIII 1966">}}
 
 {{< img src="v1548799114/mood/proxy.duckduckgo.jpg" alt="Carl Andre Poems 1958-1974 Poster">}}
