@@ -6,8 +6,9 @@
   <!-- Load responsive images via Cloudinary -->
   {{ $cloudinary := resources.Get "js/cloudinary-core-shrinkwrap.min.js" }}
   {{ $app := resources.Get "js/app.js" }}
+  {{ $lazysizes := resources.Get "js/lazysizes.js" }}
 
-  {{ $main := slice $cloudinary $app | resources.Concat "main.js" }}
+  {{ $main := slice $cloudinary $app $lazysizes | resources.Concat "main.js" }}
 
   {{ if not .Site.IsServer }}
     {{ $main = $main | minify | fingerprint }}

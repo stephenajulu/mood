@@ -4,4 +4,8 @@
 
 .Footer {
     margin-top: calc(var(--base-margin) * 2);
+
+    a {
+        color: var(--color-dark);
+    }
 }
