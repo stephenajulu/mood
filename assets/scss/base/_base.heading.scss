@@ -2,27 +2,34 @@
     #BASE: HEADING
 \*------------------------------------*/
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: var(--color-dark);
-    font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-bold);
 }
 
 h1 {
-   font-size: var(--font-size-xl);
-   line-height: var(--line-height-xl);
+    font-size: var(--font-size-xl);
+    line-height: var(--line-height-tight);
 }
 
 h2 {
     font-size: var(--font-size-l);
-    line-height: var(--line-height-l);
- }
+    line-height: var(--line-height-tight);
+}
 
 h3 {
     font-size: var(--font-size-m);
-    line-height: var(--line-height-m);
- }
+    line-height: var(--line-height-medium);
+}
 
- h4, h5, h6 {
+h4,
+h5,
+h6 {
     font-size: var(--font-size-s);
-    line-height: var(--line-height-m);
- }
+    line-height: var(--line-height-medium);
+}
