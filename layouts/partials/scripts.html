@@ -1,0 +1,20 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Load responsive images via Cloudinary -->
+{{ $cloudinary := resources.Get "js/cloudinary-core-shrinkwrap.min.js" }}
+{{ $lazysizes := resources.Get "js/lazysizes.js" }}
+{{ $lity := resources.Get "js/lity.js" }}
+
+{{ $main := slice $cloudinary $lazysizes $lity | resources.Concat "main.js" }}
+
+{{ if not .Site.IsServer }}
+  {{ $main = $main | minify | fingerprint }}
+{{ end }} 
+<script src="{{ $main.Permalink }}" {{ with $main.Data.Integrity }} integrity="{{ . }}"{{ end }}></script>
+
+<script>
+    var cl = cloudinary.Cloudinary.new({
+      cloud_name: "harrycresswell"
+    });
+    
+    cl.responsive();
+</script>

@@ -24,7 +24,7 @@ jQuery(document).ready(function ($) {
    });
  
  function open_lb(id){
-     $('body').append('<div id="Lightbox"><span aria-label="Close" class="close"><i class="material-icons">&#xE5CD;</i></span><img src="" alt="" /><span aria-label="Previous" class="prev"><i class="material-icons">&#xE5CB;</i></span><span aria-label="Next" class="next"><i class="material-icons">&#xE5CC;</i></span></div>');
+     $('body').append('<section id="Lightbox"><span aria-label="Close" class="close"><i class="material-icons">&#xE5CD;</i></span><img src="" alt="" /><span aria-label="Previous" class="prev"><i class="material-icons">&#xE5CB;</i></span><span aria-label="Next" class="next"><i class="material-icons">&#xE5CC;</i></span></section>');
      $('#Lightbox').css('display','block');
      $('#Lightbox img').attr('id',id);
      $('#Lightbox img').attr('src',$('#'+id).attr('src'));
