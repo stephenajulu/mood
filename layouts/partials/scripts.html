@@ -1,10 +1,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <!-- Load responsive images via Cloudinary -->
 {{ $cloudinary := resources.Get "js/cloudinary-core-shrinkwrap.min.js" }}
-{{ $app := resources.Get "js/app.js" }}
 {{ $lazysizes := resources.Get "js/lazysizes.js" }}
+{{ $lity := resources.Get "js/lity.js" }}
 
-{{ $main := slice $cloudinary $app $lazysizes | resources.Concat "main.js" }}
+{{ $main := slice $cloudinary $lazysizes $lity | resources.Concat "main.js" }}
 
 {{ if not .Site.IsServer }}
   {{ $main = $main | minify | fingerprint }}
