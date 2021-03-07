@@ -11,3 +11,4 @@ title = "Mood"
     keywords = "Bio Grow, hemp products, wholesale hemp, growers, hemp plants, agriculture, horticulture, CBD Oil, low THC, "
     description = "We have 1000 hectars of bio grow, making Hi–baca one of the largest growers in Europe."
     cloudinary_url = "https://res.cloudinary.com/harrycresswell/image/upload/"
+    mainSections = ["post"]

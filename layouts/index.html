@@ -1,12 +1,11 @@
 {{ define "main" }}
   <main class="Grid">
-  {{ range .Pages }}
-      {{if eq .Type "post" }} 
-      <!-- look for type in the front matter -->
-        {{ .Content }}
-        <!--<a href="{{ .Permalink }}">{{ .Title }}</a>
-        {{ .Date.Format "2006-01-02" }}-->
-        {{ end }}
+  {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+  {{ range $pages }}
+    <!-- look for type in the front matter -->
+    {{ .Content }}
+    <!--<a href="{{ .Permalink }}">{{ .Title }}</a>
+    {{ .Date.Format "2006-01-02" }}-->
   {{ end }}
-      </main>
+  </main>
 {{ end }}
